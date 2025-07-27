@@ -1,0 +1,12 @@
+name: Fisrt Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a welcome message
+        run: echo "Welcom to first workflow"
