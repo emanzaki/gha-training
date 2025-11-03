@@ -1,19 +1,15 @@
-name: Fisrt Workflow
-on:
-  push:
-    branches:
-      - main
+name: My first workflow
+
+on: push
+
 jobs:
-  example-job:
-    runs-on: ubuntu-latest
-
+  first_job:
+    runs_on: ubuntu-latest
     steps:
-      - name: Print a welcome message
-        run: echo "Welcome to the first workflow"
+    - name: welcome message
+      run: echo "My Message from GH Actions"
+    
+    - name: List files
+      run: ls 
 
-      - name: Checkout repository
-        uses: actions/checkout@v4.2.2
-
-      - name: List repository files
-        run: ls -la
-        
+    -name: Read file package.json
