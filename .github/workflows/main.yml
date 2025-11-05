@@ -12,4 +12,5 @@ jobs:
     - name: List files
       run: ls 
 
-    -name: Read file package.json
+    - name: Read file package.json
+      run: cat package.json
