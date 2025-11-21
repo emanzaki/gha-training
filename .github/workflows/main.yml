@@ -18,8 +18,8 @@ jobs:
     - name: Read file package.json
       run: cat package.json
   second_job:
-    runs-on: ubuntu-latest
     needs: first_job
+    runs-on: ubuntu-latest
     steps:
     - name: download the file
       uses: actions/download-artifact@v5
