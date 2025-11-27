@@ -16,7 +16,7 @@ jobs:
 
       - name: Step 2 - set User_1 as username
         run: |
-          echo "USERNAME=USER_1" >> $GITHUB_ENV
+          echo "USERNAME=$USER_1" >> $GITHUB_ENV
       - name: Step 3 - printing username
         run: |
           echo "USERNAME ====== $USERNAME"
