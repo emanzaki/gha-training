@@ -1,7 +1,6 @@
 name: Debugging Demo
 on:
   workflow_dispatch:
-  push:
 
 env:
   USER_1: "eman"
